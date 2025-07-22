@@ -1,0 +1,34 @@
+# ACL-main
+-
+- **[[SHARE: An SLM-based Hierarchical Action CorREction Assistant for Text-to-SQL]]**
+- **[[DCG-SQL: Enhancing In-Context Learning for Text-to-SQL with Deep Contextual Schema Link Graph]]**
+- **[[STaR-SQL: Self-Taught Reasoner for Text-to-SQL]]**
+- **[[Uncovering the Impact of Chain-of-Thought Reasoning for Direct Preference Optimization: Lessons from Text-to-SQL]]**
+- # ACL-Findings Papers
+- **[[SQLForge: Synthesizing Reliable and Diverse Data to Enhance Text-to-SQL Reasoning in LLMs]]**
+- **[[PARSQL: Enhancing Text-to-SQL through SQL Parsing and Reasoning]]**
+- **[[UCS-SQL: Uniting Content and Structure for Enhanced Semantic Bridging In Text-to-SQL]]**
+- # ACL-Accepted System Demonstrations Papers
+- **[[Abacus-SQL: A Text-to-SQL System Empowering Cross-Domain and Open-Domain Database Retrieval]]**
+- **[[ADEPT-SQL: A High-performance Text-to-SQL Application for Real-World Enterprise-Level Databases]]** (尚未公开)
+- **[[VeriMinder: Mitigating Analytical Vulnerabilities in NL2SQL]]** (尚未公开)
+- # ACL Industry Track Papers
+- **[[SQLGenie: A Practical LLM based System for Reliable and Efficient SQL Generation]]**
+- # ICML
+- **[[Structure-Guided Large Language Models for Text-to-SQL Generation]]**
+- **[[Alpha-SQL: Zero-Shot Text-to-SQL using Monte Carlo Tree Search]]**
+- # AAAI
+- **CogSQL: A Cognitive Framework for Enhancing Large Language Models in Text-to-SQL Translation**
+- **SQLFixAgent: Towards Semantic-Accurate Text-to-SQL Parsing via Consistency-Enhanced Multi-Agent Collaboration**
+- **Enhancing SQL Query Generation with Neurosymbolic Reasoning**
+- **Filling Memory Gaps: Enhancing Continual Semantic Parsing via SQL Syntax Variance-Guided LLMs Without Real Data Replay**
+- **Confidence Estimation for Error Detection in Text-to-SQL Systems**
+- **MAGIC: Generating Self-Correction Guideline for In-Context Text-to-SQL**
+- # NAACL
+- **PRACTIQ: A Practical Conversational Text-to-SQL dataset with Ambiguous and Unanswerable Queries**
+- **You Only Read Once (YORO): Learning to Internalize Database Knowledge for Text-to-SQL**
+- **MSc-SQL: Multi-Sample Critiquing Small Language Models For Text-To-SQL Translation**
+- **FLEX: Expert-level False-Less EXecution Metric for Text-to-SQL Benchmark**
+- **H-STAR: LLM-driven Hybrid SQL-Text Adaptive Reasoning on Tables**
+- **Track-SQL: Enhancing Generative Language Models with Dual-Extractive Modules for Schema and Context Tracking in Multi-turn Text-to-SQL**
+-
