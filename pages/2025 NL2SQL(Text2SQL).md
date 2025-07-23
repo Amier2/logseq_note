@@ -21,8 +21,8 @@
 - **[[CogSQL: A Cognitive Framework for Enhancing Large Language Models in Text-to-SQL Translation]]**
 - **[[SQLFixAgent: Towards Semantic-Accurate Text-to-SQL Parsing via Consistency-Enhanced Multi-Agent Collaboration]]**
 - **[[Enhancing SQL Query Generation with Neurosymbolic Reasoning]]**
-- **Filling Memory Gaps: Enhancing Continual Semantic Parsing via SQL Syntax Variance-Guided LLMs Without Real Data Replay**
-- **Confidence Estimation for Error Detection in Text-to-SQL Systems**
+- **[[Filling Memory Gaps: Enhancing Continual Semantic Parsing via SQL Syntax Variance-Guided LLMs Without Real Data Replay]]**
+- **[[Confidence Estimation for Error Detection in Text-to-SQL Systems]]**
 - **MAGIC: Generating Self-Correction Guideline for In-Context Text-to-SQL**
 - # NAACL
 - **PRACTIQ: A Practical Conversational Text-to-SQL dataset with Ambiguous and Unanswerable Queries**
