@@ -1,0 +1,6 @@
+- ![Refer to caption](https://arxiv.org/html/2406.12692v3/x2.png)
+-
+- 多智能体协作
+	- **Manager Agent**
+	- **Correction Agent**
+	- **Feedback Agent**

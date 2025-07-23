@@ -23,12 +23,12 @@
 - **[[Enhancing SQL Query Generation with Neurosymbolic Reasoning]]**
 - **[[Filling Memory Gaps: Enhancing Continual Semantic Parsing via SQL Syntax Variance-Guided LLMs Without Real Data Replay]]**
 - **[[Confidence Estimation for Error Detection in Text-to-SQL Systems]]**
-- **MAGIC: Generating Self-Correction Guideline for In-Context Text-to-SQL**
+- **[[MAGIC: Generating Self-Correction Guideline for In-Context Text-to-SQL]]**
 - # NAACL
-- **PRACTIQ: A Practical Conversational Text-to-SQL dataset with Ambiguous and Unanswerable Queries**
-- **You Only Read Once (YORO): Learning to Internalize Database Knowledge for Text-to-SQL**
-- **MSc-SQL: Multi-Sample Critiquing Small Language Models For Text-To-SQL Translation**
-- **FLEX: Expert-level False-Less EXecution Metric for Text-to-SQL Benchmark**
-- **H-STAR: LLM-driven Hybrid SQL-Text Adaptive Reasoning on Tables**
-- **Track-SQL: Enhancing Generative Language Models with Dual-Extractive Modules for Schema and Context Tracking in Multi-turn Text-to-SQL**
+- **[[PRACTIQ: A Practical Conversational Text-to-SQL dataset with Ambiguous and Unanswerable Queries]]**
+- **[[You Only Read Once (YORO): Learning to Internalize Database Knowledge for Text-to-SQL]]**
+- **[[MSc-SQL: Multi-Sample Critiquing Small Language Models For Text-To-SQL Translation]]**
+- **[[FLEX: Expert-level False-Less EXecution Metric for Text-to-SQL Benchmark]]**
+- **[[H-STAR: LLM-driven Hybrid SQL-Text Adaptive Reasoning on Tables]]**
+- **[[Track-SQL: Enhancing Generative Language Models with Dual-Extractive Modules for Schema and Context Tracking in Multi-turn Text-to-SQL]]**
 -
