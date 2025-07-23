@@ -31,8 +31,18 @@
 - **[[H-STAR: LLM-driven Hybrid SQL-Text Adaptive Reasoning on Tables]]**
 - **[[Track-SQL: Enhancing Generative Language Models with Dual-Extractive Modules for Schema and Context Tracking in Multi-turn Text-to-SQL]]**
 -
--
+- # 主要发现总结（Gemini总结的）
+  
+  近期Text-to-SQL领域取得了显著进展，主要由大型语言模型（LLM）驱动。这些进展体现在多个关键方面：
+- A. 增强推理和搜索策略
+- B. 改进错误纠正和鲁棒性。增强Text-to-SQL系统检测和纠正错误的能力，从而提高其整体鲁棒性，是研究的关键领域。这涉及复杂的多代理框架和执行引导的细化技术。
+- C. 优化数据效率和泛化能力。解决数据稀缺性挑战和增强Text-to-SQL模型的泛化能力对于其广泛采用至关重要。这涉及创新的数据合成、持续学习和知识内化策略。
+- D. 推进上下文理解和多轮交互。Text-to-SQL系统的演进超越了单轮查询翻译，涵盖了对话交互的复杂性，包括多轮对话、歧义解决和处理无法回答的问题。
+- E. Text-to-SQL的评估指标和基准测试。准确的评估对于推进Text-to-SQL系统至关重要。然而，传统指标已显示出显著局限性，导致了更复杂、更对其人类的评估方法的发展。
 - | 论文标题 | 核心方法/途径 | 主要贡献 | 主要技术关注领域 |
+  :LOGBOOK:
+  CLOCK: [2025-07-23 Wed 16:17:00]
+  :END:
   | [[SHARE: An SLM-based Hierarchical Action CorREction Assistant for Text-to-SQL]] | 基于SLM的分层动作纠正：将SQL转换为动作轨迹，使用3个专门的SLM进行精细化修正，分层自演化训练。 | 精确错误定位，高效纠正，对LLM鲁棒，数据高效。 | 错误检测、自纠正、可靠性 |
   | [[DCG-SQL: Enhancing In-Context Learning for Text-to-SQL with Deep Contextual Schema Link Graph]] | 深度上下文模式链接图：利用图结构联合表示问题和数据库模式，改进示例检索。包括模式剪枝、基于图的编码器、自动化CoT提示。 | 卓越的示例检索，提升性能（尤其对小型LLM），高效。 | 推理、上下文学习、结构/模式理解 |
   | [[STaR-SQL: Self-Taught Reasoner for Text-to-SQL]] | 自学推理器：将SQL生成重构为推理驱动过程。LLM自生成CoT推理，根据正确结果微调，使用结果监督奖励模型（ORM）进行验证。 | 通过推理增强训练显著提升Text-to-SQL性能（Spider上86.6%执行准确率）。 | 推理、上下文学习 |
@@ -51,4 +61,19 @@
   | [[Confidence Estimation for Error Detection in Text-to-SQL Systems]] | 选择性分类器与基于熵的置信度：集成选择性分类器，使用熵进行置信度估计，分析模型校准。 | 改进错误检测，特别是针对不相关问题。强调模型校准对可靠性的重要性。 | 错误检测、自纠正、可靠性 |
   | [[MAGIC: Generating Self-Correction Guideline for In-Context Text-to-SQL]] | 多智能体指南生成：管理器、反馈、纠正代理迭代协作，自动化自纠正指南创建。自适应提示修订。 | 自动化指南生成，优于人工编写指南，增强可解释性，高效。 | 错误检测、自纠正、可靠性 |
   | [[PRACTIQ: A Practical Conversational Text-to-SQL dataset with Ambiguous and Unanswerable Queries]] | 新型数据集构建：创建PRACTIQ数据集，包含模糊和无法回答的问题，四轮对话结构，基于LLM的基线。 | 提供应对真实世界复杂性的关键基准，揭示SOTA在处理歧义/无法回答问题上的不足。 | 评估指标/基准进展、实际系统设计 |
+  | [[You Only Read Once (YORO): Learning to Internalize Database Knowledge for Text-to-SQL]] | **内部化数据库知识**：提出了一种方法让模型将数据库的知识（如模式和内容）内部化到其参数中，而不是在每次推理时都显式地读取这些知识。通过**预训练任务**和**结构化提示学习**实现。这减少了对大量上下文窗口的需求，并降低了推理成本。| 大幅降低了Text-to-SQL模型的**推理成本和延迟**，特别是在面对大型数据库时。提高了在低资源环境下的效率和性能，且能更好地处理复杂查询。 | LLM增强方法；模式链接与理解技术；效率与实际部署考量 |
+  | [[MSc-SQL: Multi-Sample Critiquing Small Language Models For Text-To-SQL Translation]] | **多样本批评（Multi-Sample Critiquing）**：针对小型、开源LLM，通过生成多个SQL候选，然后使用一个**批评模型**（critique model）来评估这些候选，选出最佳的SQL，或提供反馈进行优化。该批评模型可以是一个更强大的LLM或经过微调的SLM。 | 显著提升了小型、开源LLM在Text-to-SQL任务上的性能，使其能够达到甚至超越大型LLM的水平，同时**降低了部署成本**和计算资源需求。 | LLM增强方法；错误检测、纠正与鲁棒性提升；效率与实际部署考量 |
+  | [[FLEX: Expert-level False-Less EXecution Metric for Text-to-SQL Benchmark]] | 提出了一种新的Text-to-SQL评估指标，旨在**纠正传统执行准确性度量中的缺陷**，特别是那些因数据库状态、SQL方言差异或评估环境限制导致的误判（假阳性/假阴性）。通过更精细的SQL解析和执行结果验证来提高评估的可靠性。 | 提供了一个**更准确、更可靠**的Text-to-SQL模型评估方法，能够更真实地反映模型性能，避免了现有度量标准造成的误导，有助于更公平地比较不同模型。 | 评估指标与基准数据集构建 |
+  | [[H-STAR: LLM-driven Hybrid SQL-Text Adaptive Reasoning on Tables]] | 提出一个由LLM驱动的混合推理框架，结合了**符号（SQL）和文本推理**。它能根据表格数据和用户查询的复杂性，**自适应地选择**是使用SQL查询、文本推理还是两者的结合来回答问题，尤其适用于表格问答（Table QA）任务。 | 实现了在表格问答任务中**更灵活、更准确的推理**，弥补了单一模式（纯SQL或纯文本）的不足，在各种表格推理数据集上表现出SOTA性能。 | LLM增强方法；神经符号方法；推理与上下文学习 |
+  | [[Track-SQL: Enhancing Generative Language Models with Dual-Extractive Modules for Schema and Context Tracking in Multi-turn Text-to-SQL]] | **双抽取模块**：在多轮对话式Text-to-SQL中，通过引入专门的**模式抽取模块**（Schema Extraction Module）和**上下文跟踪模块**（Context Tracking Module）来增强LLM。这些模块分别负责从对话历史中识别和跟踪相关的数据库模式信息以及上下文依赖。 | 显著提高了生成式语言模型在**多轮Text-to-SQL**任务中的性能，特别是对**模式和上下文变化的适应性**，使得模型能够更准确地处理复杂的、跨回合的查询。 | 多轮对话式Text-to-SQL；模式链接与理解技术；LLM增强方法 |
 -
+- # 未来研究方向与开放挑战
+  
+  尽管取得了显著进展，Text-to-SQL领域仍面临多项开放挑战和未来研究方向：
+- **对多样化和噪声输入的鲁棒性：** 需要进一步研究如何处理高度模糊、格式不佳或不完整的自然语言查询，从结构化对话转向更灵活的人机交互。
+- **可扩展到极其庞大和复杂的模式：** 尽管已取得进展，但为包含数千个表和列的数据库高效准确地生成SQL仍然是一项重大挑战。
+- **增强可解释性：** 除了生成正确的SQL，未来的系统应提供清晰的推理解释，尤其是在出现错误或需要澄清时，以建立用户信任。
+- **动态环境中的持续学习：** 开发鲁棒的持续学习策略，能够在不发生灾难性遗忘或损害数据隐私的情况下适应不断演变的数据库模式和用户查询模式，对于长期部署至关重要。
+- **现实世界场景的基准测试：** 创建更全面、更具挑战性的基准，真正反映工业应用的复杂性（例如，效率指标、歧义处理、无法回答性、多轮上下文、领域泛化），对于推动有意义的进展至关重要。
+- **高效且经济的部署：** 模型压缩、高效推理技术和优化系统架构方面的持续创新将是使高性能Text-to-SQL系统广泛可用且经济可行的必要条件。
+  **与更广泛AI系统的集成：** 探索如何将Text-to-SQL无缝集成到更大的AI系统中（例如，知识图谱、分析平台），以实现更复杂的数据驱动应用。**
