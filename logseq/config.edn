@@ -1,5 +1,5 @@
 {:meta/version 1
-
+ :publishing/all-pages-public? true
  ;; Set the preferred format.
  ;; Available options:
  ;; - Markdown (default)
