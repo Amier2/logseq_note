@@ -1,0 +1,21 @@
+## 如何将高层任务转化为可执行的动作序列
+- ### ReAct 框架（Reasoning + Acting）
+	- **Thought**：语言模型基于当前上下文，生成下一步要做什么的自然语言描述。
+	- **Action**：根据 Thought，选择并调用外部工具（API、搜索引擎、数据库、机械臂等）。
+	- **Observation**：获得工具返回的原始结果。
+	- 回到第 1 步，直到 Thought 判断任务完成，输出最终 **Answer**。
+- ### PDDL(规划领域定义语言)
+	- #### Domain 文件（领域定义）
+		- 描述“这个世界里有哪些对象类型、哪些谓词、哪些动作，以及每个动作的前提条件和执行后的效果”。
+	- #### Problem 文件（问题实例）
+		- 描述“本次要解决的初始状态是什么、目标状态是什么、有哪些具体对象”。
+-
+- [[Smurfs: Multi-Agent System using Context-Efficient DFSDT for Tool Planning]]
+- [[BAR: A Backward Reasoning based Agent for Complex Minecraft Tasks]]
+- [[HyperTree Planning: Enhancing LLM Reasoning via Hierarchical Thinking]]
+- [[BENCHMARKING AGENTIC WORKFLOW GENERATION]]
+- [[LLM-based Search Assistant with Holistically Guided MCTS forIntricate Information Seeking]]
+- [[Plan-and-Act: Improving Planning of Agents for Long-Horizon Tasks]]
+- [[SHARE: An SLM-based Hierarchical Action CorREction Assistant for Text-to-SQL]]
+- [[STaR-SQL: Self-Taught Reasoner for Text-to-SQL]]
+-
