@@ -1,0 +1,25 @@
+name: Publish Logseq to GitHub Pages
+
+on:
+  push:
+    branches: [main]  # 监听主分支的推送
+  workflow_dispatch:  # 允许手动触发
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Logseq Publish
+        uses: logseq/publish-spa@v0.2.0  # 官方推荐的构建工具
+        with:
+          theme-mode: light  # 可选 light/dark
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages  # 部署到 gh-pages 分支
+          folder: www       # Logseq 构建生成的静态文件目录
+          clean: true
