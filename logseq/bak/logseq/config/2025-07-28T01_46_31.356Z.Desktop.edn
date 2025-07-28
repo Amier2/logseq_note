@@ -1,5 +1,5 @@
 {:meta/version 1
- :publishing/all-pages-public? false
+ :publishing/all-pages-public? true
  ;; Set the preferred format.
  ;; Available options:
  ;; - Markdown (default)
@@ -420,4 +420,4 @@
  ;;      ;use Percent-encoding for other invalid characters
  :file/name-format :triple-lowbar}
 
-
+ :publishing/all-pages-public? false
