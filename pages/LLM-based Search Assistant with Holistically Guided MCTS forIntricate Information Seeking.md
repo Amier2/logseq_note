@@ -1,4 +1,6 @@
-## SIGIR 2025
+public:: true
+
+- ## SIGIR 2025
 - ![image.png](../assets/image_1753340149103_0.png){:height 305, :width 778}
 -
 - ## 背景

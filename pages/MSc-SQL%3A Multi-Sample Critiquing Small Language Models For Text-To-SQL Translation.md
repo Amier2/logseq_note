@@ -1,3 +1,5 @@
+public:: true
+
 - ![Refer to caption](https://arxiv.org/html/2410.12916v2/x1.png)
 -
 - ## 方法

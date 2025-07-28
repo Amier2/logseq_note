@@ -1,4 +1,6 @@
-- ![image.png](../assets/image_1753170760957_0.png)
+public:: true
+
+- ![image.png](../assets/image_1753170760957_0.png){:height 361, :width 778}
 - ## Zero‑Shot Text‑to‑SQL方法
 - 将 SQL 生成视为一个**树形搜索问题**：
 	- **节点**：代表部分构建状态。

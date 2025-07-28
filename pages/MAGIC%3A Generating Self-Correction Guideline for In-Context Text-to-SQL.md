@@ -1,3 +1,5 @@
+public:: true
+
 - ![Refer to caption](https://arxiv.org/html/2406.12692v3/x2.png)
 -
 - ## Prompt工程

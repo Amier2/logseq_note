@@ -1,3 +1,5 @@
+public:: true
+
 - ![Refer to caption](https://arxiv.org/html/2406.13408v4/x2.png)
 - ## 方法
 - ### SQLReviewer

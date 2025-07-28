@@ -1,4 +1,6 @@
-# ACL-main
+public:: true
+
+- # ACL-main
 - **[[SHARE: An SLM-based Hierarchical Action CorREction Assistant for Text-to-SQL]]**
 - **[[DCG-SQL: Enhancing In-Context Learning for Text-to-SQL with Deep Contextual Schema Link Graph]]**
 - **[[STaR-SQL: Self-Taught Reasoner for Text-to-SQL]]**
