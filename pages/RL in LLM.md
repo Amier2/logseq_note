@@ -70,9 +70,12 @@ public:: true
 - ![Refer to caption](https://arxiv.org/html/2503.06072v2/x13.png)
 - ## 强化学习LLM算法
 - ### [[PPO]]
-- ### [[RLOO]]
 - ### [[GRPO]]
 - ### [[DrGRPO]]
-- ### [[REINFORCE++]]
+- ### [[DAPO]]
 - ### [[ReMax]]
+- ### [[RLOO]]
+- ### [[REINFORCE++]]
+- ### [[PRIME]]
+-
 -

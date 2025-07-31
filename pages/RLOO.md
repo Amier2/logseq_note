@@ -1,4 +1,6 @@
-## REINFORCE Leave-One-Out
+public:: true
+
+- ## REINFORCE Leave-One-Out
 - 算法认为PPO 的许多组件在 RLHF 环境中是不必要的，直接采用更简单的policy gradient类强化学习算法也可以取得很好的效果，PPO中的value模型，clip操作等模块可能并不有效。
 - ### 特点
 	- RLOO使用RL中policy-based最基础的**Vanilla Policy Gradient REINFORCE**算法，直接计算梯度更新策略网络
