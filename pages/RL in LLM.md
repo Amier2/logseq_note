@@ -19,7 +19,7 @@ public:: true
 - 而如果语言模型先验太强，策略很快坍缩成“复读机”或“万能回复”，生成多样性骤降，指标看似高实则过拟合(Reward hacking现象)
 - # RL in LLM
 - 到目前为止，预训练良好的LLM可以在RL训练时提供可靠探索，模型有了可靠探索能力后通过设计的奖励指标就可以比较有效地向着设计的**偏好**fine tune学习
-- ## 后训练
+- ## 在后训练的应用
 - ![Figure 1: A rendition of the early, three stage RLHF process with SFT, a reward model, and then optimization.](https://rlhfbook.com/c/images/rlhf-basic.png){:height 66, :width 778}
 - ### 微调(Fine Tuning)
 - 微调是将预训练大语言模型（LLM）适配到特定任务的核心环节，它通过有针对性的参数调整来精炼模型能力。该过程利用带有标签或任务专属的数据集来优化性能，解决domain gap
@@ -56,4 +56,23 @@ public:: true
 	- #### [[DPO(Direct Preference Optimization)]]
 		- RLHF 复杂的难点在于创建一个能够准确反映人类偏好的奖励模型，以及在优化估计奖励的同时，保持与原始模型接近的微调。DPO直接优化策略，不建模奖励模型
 - ### 推理(Reasoning)
-	-
+	- 推理过程也可以被建模为一个**序列决策过程**
+	- 从强化学习的视角看推理：
+		- 针对输入查询 x，迭代地构建一系列中间步$a_1, a_2, ..., a_T$，以最大化获得正确最终答案的可能性。
+		- 状态$s_t$表示时间步 t 时的推理轨迹
+		- 状态会随着推理过程而动态演化，它既融合了由模型生成的显式推理路径，也融合了从上下文中提取的潜在知识。例如在数学证明中，状态可能包括题设、已推导的等式，以及可适用定理的记忆，从而帮助模型在多个步骤中保持逻辑一致性。
+		- 动作 $a_t$表示选择下一步推理的方式，它可以是：生成推理过程的词或短语，应用预定义的逻辑或数学变换（如代数简化），从知识库中选择相关定理或规则，或在获得结论时终止推理
+		- 奖励函数为推理提供关键反馈，指导模型的学习过程(个人认为是最重要的部分)
+			- ORM(Outcome Reward Model)是在生成模型中，对生成结果整体打分评估，或者直接环境反馈
+				- Deepseek-R1-Zero用的是ORM
+			- PRM(Process Reward Mode)是在生成过程中，分步骤对每一步进行打分的更细粒度奖励模型。
+				- Deepseek-R1用的PRM
+- ![Refer to caption](https://arxiv.org/html/2503.06072v2/x13.png)
+- ## 强化学习LLM算法
+- ### [[PPO]]
+- ### [[RLOO]]
+- ### [[GRPO]]
+- ### [[DrGRPO]]
+- ### [[REINFORCE++]]
+- ### [[ReMax]]
+-
