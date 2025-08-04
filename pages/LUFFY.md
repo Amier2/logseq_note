@@ -1,0 +1,13 @@
+## Learning to reason Under oFF-policY guidance
+- ![图片](https://mmbiz.qpic.cn/mmbiz_png/Psho9dm7oDF1Ovy3nTAxcGK3za8QVxYHicygwpHYs47umMfujzCC9krsYmslhHwVRBLia42VAAXdoV9PxvdRsNTA/640?wx_fmt=png&from=appmsg&randomid=u46yn96v&tp=webp&wxfrom=5&wx_lazy=1)
+-
+-
+- **zero-RL**一方面受制于模型本身能力，很难在推理行为上产生质的飞跃，RL可能更多地是放大模型在预训练阶段学习到的行为，并没有获取额外的推理能力
+- **SFT**又存在泛化能力的不足
+-
+- 为了**既能借鉴专家经验，又能保持自身探索**
+- 引入来自强大外部策略的高质量**推理示范**，同时让模型不断进行**自主的推理尝试**
+- 这种做法的难点在于：
+	- 如果简单地把外部示范硬塞给模型，会出现“熵坍塌”，模型可能会因为过度依赖示范而变得贪婪保守
+	- 需要在训练达到**“即模仿又探索”的自适应平衡**
+	-
