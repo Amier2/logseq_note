@@ -78,7 +78,7 @@ public:: true
 - ### [[REINFORCE++]]
 - ### [[PRIME]]
 - ### [[The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models]] ☆
-- ### [[LUFFY]]
+- ### [[LUFFY]] ☆☆
 - ## RL与SFT
 - ### [[SRFT]]
 - [[ReLIFT]]
