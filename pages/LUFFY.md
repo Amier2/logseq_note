@@ -1,4 +1,6 @@
-## Learning to reason Under oFF-policY guidance
+public:: true
+
+- ## Learning to reason Under oFF-policY guidance
 - ![图片](https://mmbiz.qpic.cn/mmbiz_png/Psho9dm7oDF1Ovy3nTAxcGK3za8QVxYHicygwpHYs47umMfujzCC9krsYmslhHwVRBLia42VAAXdoV9PxvdRsNTA/640?wx_fmt=png&from=appmsg&randomid=u46yn96v&tp=webp&wxfrom=5&wx_lazy=1)
 -
 -

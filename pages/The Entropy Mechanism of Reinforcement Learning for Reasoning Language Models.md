@@ -1,4 +1,6 @@
-### 策略熵（Policy Entropy）
+public:: true
+
+- ### 策略熵（Policy Entropy）
 	- **熵**量化了一个代理在选择动作时的可预测性或随机性，给定策略模型$$π_θ​$$  和训练集 $$D$$，我们定义其在训练数据上的平均 token 级别熵为：
 - #+BEGIN_EXPORT latex
   H(\pi_\theta, D) = -\mathbb{E}_{D, \pi_\theta}[\log \pi_\theta(y_t | y_{<t})] = -\frac{1}{|D|} \sum_{x \in D} \frac{1}{|y|} \sum_{t=1}^{|y|} \mathbb{E}_{y_t \sim \pi_\theta}[\log \pi_\theta(y_t | y_{<t}, x)]

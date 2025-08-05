@@ -1,4 +1,6 @@
-## 问题
+public:: true
+
+- ## 问题
 	- 数据库模式（schema）庞大复杂（超过 3000 列）
 	- SQL 方言多样（如 BigQuery、Snowflake）
 	- 查询需求复杂（如涉及数据转换、分析等）
