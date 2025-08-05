@@ -32,6 +32,8 @@ public:: true
 - **[[FLEX: Expert-level False-Less EXecution Metric for Text-to-SQL Benchmark]]**
 - **[[H-STAR: LLM-driven Hybrid SQL-Text Adaptive Reasoning on Tables]]**
 - **[[Track-SQL: Enhancing Generative Language Models with Dual-Extractive Modules for Schema and Context Tracking in Multi-turn Text-to-SQL]]**
+- # ICLR
+- **[[ReFoRCE: A TEXT-TO-SQL AGENT WITH SELF-REFINEMENT, FORMAT RESTRICTION, AND COLUMN EXPLORATION]]**
 -
 - # 主要发现总结（Gemini总结的）
   

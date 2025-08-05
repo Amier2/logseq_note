@@ -83,4 +83,9 @@ public:: true
 - ### [[SRFT]]
 - ### [[Reinforcement Learning Finetunes Small Subnetworks in Large Language Models]]
 - ## RL in Text2SQL
--
+- 多智能体系统(不涉及RL训练)： [[ReFoRCE: A TEXT-TO-SQL AGENT WITH SELF-REFINEMENT, FORMAT RESTRICTION, AND COLUMN EXPLORATION]]
+- 主要关注奖励设计：
+	- Arctic-Text2SQL-R1: Simple Rewards, Strong Reasoning in Text-to-SQL
+	- SQL-R1: Training Natural Language to SQL Reasoning Model By Reinforcement Learning
+	- Think2SQL: Reinforce LLM Reasoning Capabilities for Text2SQL
+- 有认为细粒度的能更好，有通过简单的奖励设计也达到了好的效果
