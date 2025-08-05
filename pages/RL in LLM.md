@@ -69,7 +69,7 @@ public:: true
 				- Deepseek-R1用的PRM
 - ![Refer to caption](https://arxiv.org/html/2503.06072v2/x13.png)
 - ## RL-LLM算法
-- ### [[PPO]]  ☆
+- ### [[PPO]]  ☆☆
 - ### [[GRPO]]
 - ### [[DrGRPO]]
 - ### [[DAPO]] ☆
@@ -81,6 +81,6 @@ public:: true
 - ### [[LUFFY]] ☆☆
 - ## RL与SFT
 - ### [[SRFT]]
-- [[ReLIFT]]
-- [[Reinforcement Learning Finetunes Small Subnetworks in Large Language Models]]
+- ### [[Reinforcement Learning Finetunes Small Subnetworks in Large Language Models]]
+- ## RL in Text2SQL
 -
