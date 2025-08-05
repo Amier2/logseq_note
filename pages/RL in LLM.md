@@ -89,3 +89,4 @@ public:: true
 	- SQL-R1: Training Natural Language to SQL Reasoning Model By Reinforcement Learning
 	- Think2SQL: Reinforce LLM Reasoning Capabilities for Text2SQL
 - 有认为细粒度的能更好，有通过简单的奖励设计也达到了好的效果
+-
