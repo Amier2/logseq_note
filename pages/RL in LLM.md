@@ -55,6 +55,7 @@ public:: true
 	- ![Refer to caption](https://arxiv.org/html/2503.06072v2/x10.png)
 	- #### [[DPO(Direct Preference Optimization)]]
 		- RLHF 复杂的难点在于创建一个能够准确反映人类偏好的奖励模型，以及在优化估计奖励的同时，保持与原始模型接近的微调。DPO直接优化策略，不建模奖励模型
+	- #### [[SPPO(Self-Play Preference Optimization for Language Model Alignment)]]
 - ### 推理(Reasoning)
 	- 推理过程也可以被建模为一个**序列决策过程**
 	- 从强化学习的视角看推理：
