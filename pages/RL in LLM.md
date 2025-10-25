@@ -4,7 +4,6 @@ public:: true
 - 参考：
 	- [《rlhfbook》](https://rlhfbook.com/)
 	- [Large Language Models Post-training: Surveying Techniques from Alignment to Reasoning](https://arxiv.org/html/2503.06072v2#S3)
-	-
 - # Why RL in NLP?
 - 很多 NLP 任务本质是每一步做一个离散决策（选词、选句、选操作），最终拼成一个完整的输出。RL 的「序贯决策」框架天然就可以把「搜索过程」显式地建模成马尔可夫决策过程（MDP）。
 - ![image.png](../assets/image_1753689415580_0.png)
@@ -90,4 +89,5 @@ public:: true
 	- SQL-R1: Training Natural Language to SQL Reasoning Model By Reinforcement Learning
 	- Think2SQL: Reinforce LLM Reasoning Capabilities for Text2SQL
 - 有认为细粒度的能更好，有通过简单的奖励设计也达到了好的效果
+-
 -
